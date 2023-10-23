@@ -42,6 +42,7 @@ const fetchstd = async () => {
 
 
 
+
   return (
     <DocContaxt.Provider value={{allCourses,setAllCourses, allStd,setAllStudents }}>
       {props.children}

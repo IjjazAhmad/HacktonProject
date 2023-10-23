@@ -94,7 +94,7 @@ export default function Order() {
         </div>
       </div>
 
-      <div className="container paginat ">
+      <div className="container paginat position-absolute bottom-0 end-0">
         <div className="row">
           <div className="col">
             <ul className="pagination modal-4 float-end">

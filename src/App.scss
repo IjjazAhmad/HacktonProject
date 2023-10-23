@@ -9,3 +9,67 @@
 main {
     flex: 1 0 auto;
 }
+
+.paginat {
+    .pagination {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+
+        li {
+            display: inline;
+            text-align: center;
+        }
+
+        a {
+            float: left;
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 5px 12px;
+            color: $colorwhite;
+            margin-left: -1px;
+            border: 1px solid transparent;
+            line-height: 1.5;
+
+            &.active {
+                cursor: default;
+            }
+
+            &:active {
+                outline: none;
+            }
+        }
+    }
+
+    .modal-4 {
+        a {
+            margin: 0 5px;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            @include border-radius(100%);
+            background-color: #F7C12C;
+
+            &.prev {
+                @include border-radius(50px 0 0 50px);
+                width: 100px;
+            }
+
+            &.next {
+                @include border-radius(0 50px 50px 0);
+                width: 100px;
+            }
+
+            &:hover {
+                background-color: $color-highlight;
+            }
+
+            &.active,
+            &:active {
+                background-color: $color-highlight;
+            }
+        }
+    }
+}
